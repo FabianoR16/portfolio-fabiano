@@ -126,7 +126,7 @@ main{
   font-size: 35px;
 }
 
-/* ====== CONTAINER DOS CARDS ====== */
+
 .skills {
   display: flex;
   justify-content: center;
@@ -135,7 +135,7 @@ main{
   margin-top: 50px;
 }
 
-/* ====== CADA CARD ====== */
+
 .div-skills {
   width: 200px;
   height: 250px;
@@ -149,7 +149,7 @@ main{
   justify-content: center;
 }
 
-/* ====== IMAGEM ====== */
+
 .img-skills {
   width: 90px;
   height: 90px;
@@ -157,14 +157,14 @@ main{
   transition: transform 0.3s ease;
 }
 
-/* ====== TEXTO ====== */
+
 .div-skills h3 {
   color: white;
   font-size: 20px;
   text-align: center;
 }
 
-/* ====== ANIMAÇÕES ====== */
+
 .div-skills:hover {
   transform: translateY(-10px);
   box-shadow: 0px 0px 20px #0d47a1;
@@ -174,6 +174,7 @@ main{
 .div-skills:hover .img-skills {
   transform: scale(1.1);
 }
+
 
 .div-projetos {
   width: 500px;
@@ -238,4 +239,28 @@ main{
     background-color: transparent;
     border: 2px solid #07335a;
     box-shadow: 4px 4px 20px #0d47a1;
+}
+
+@media only screen and (max-width: 768px){
+  .sobre{
+    width: 80%;
+  }
+  .p-sobre{
+    text-align: center;
+    max-width: 100%;
+  }
+  .h1-perfil{
+    margin-top: -200px;
+  }
+  .div-projetos{
+    width: 80%;
+  }
+  .p-skills{
+    max-width: 90%;
+  }
+  .ul-nav{
+    gap: 30px;
+    position: relative;
+    left: -5%;
+  }
 }
