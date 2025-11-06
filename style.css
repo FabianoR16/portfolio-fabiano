@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+  :root{
+    --blue-1: #0b2340; /* tom escuro de azul */
+    --blue-2: #07335a; /* tom intermediário */
+    --black:  #000000; /* preto */
+  }
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  background: linear-gradient(135deg, #0a0a0a 0%, #0b1b3a 50%, #0d47a1 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-cabecalho{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(12, 1, 62);
+    padding: 30px;
+    margin: 0 auto;
+    z-index: 100;
+      border-bottom: 3px solid transparent; /* define a espessura da linha */
+  border-image: linear-gradient(to right, #0071a1, #0d47a1, #0d004d);
+  border-image-slice: 1;
+}
+
+.ul-nav{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.li-nav{
+    list-style-type: none;
+    color: white;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+
+.li-nav:hover{
+    cursor: pointer;
+    font-size: 23px;
+    color: rgb(114, 64, 240);
+}
+
+main{
+    margin: 0;
+}
+
+.h1-perfil{
+    position: relative;
+    top: 450px;
+    text-align: center;
+    color: white;
+    font-size: 55px;
+}
+
+.h2-perfil{
+        position: relative;
+    top: 450px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.h2-sobre{
+    margin-top: 970px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+.sobre{
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 45%;
+    height: auto;
+    background-color: #191a2cc2;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+.p-sobre{
+    color: white;
+    font-size: 19px;
+    max-width: 960px;      
+    margin: 0 auto;        
+    text-align: justify;    
+    line-height: 1.6;       
+    padding: 0 20px;        
+    text-align: left;
+}
+
+.h2-projeto{
+    color: white;
+    text-align: center;
+    margin-top: 450px;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.h2-habilidades{
+    margin-top: 450px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.h2-habilidades {
+  margin-top: 450px;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+
+/* ====== CONTAINER DOS CARDS ====== */
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+/* ====== CADA CARD ====== */
+.div-skills {
+  width: 200px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #0d47a1;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====== IMAGEM ====== */
+.img-skills {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* ====== TEXTO ====== */
+.div-skills h3 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ====== ANIMAÇÕES ====== */
+.div-skills:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 20px #0d47a1;
+  background-color: rgba(10, 10, 40, 0.9);
+}
+
+.div-skills:hover .img-skills {
+  transform: scale(1.1);
+}
+
+.div-projetos {
+  width: 500px;
+  height: 650px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #0d47a1;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-projetos{
+    color: white;
+    font-size: 20px;
+}
+
+
+.img-projetos {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.div-projetos h3 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.h2-skills{
+  margin-top: -20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.p-skills{
+    color: white;
+    width: 450px;
+    text-align: justify;
+    margin-bottom: 130px;
+}
+
+.a-link{
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+    width: 100px;
+    text-align: center;
+    background-color: #07335a;
+    border-radius: 10px;
+}
+
+.a-link:hover{
+    transition: all 0.8s ease-in-out;
+    background-color: transparent;
+    border: 2px solid #07335a;
+    box-shadow: 4px 4px 20px #0b1b3a;
+}
