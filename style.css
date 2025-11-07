@@ -23,31 +23,40 @@ body{
 }
 
 .nav-cabecalho{
-    position: fixed;
     width: 100%;
     background-color: rgb(12, 1, 62);
-    padding: 30px;
+    padding: 20px;
     margin: 0 auto;
     z-index: 100;
       border-bottom: 3px solid transparent; /* define a espessura da linha */
   border-image: linear-gradient(to right, #0071a1, #0d47a1, #0d004d);
   border-image-slice: 1;
+    position: fixed;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
 }
 
 .ul-nav{
     display: flex;
     gap: 60px;
     justify-content: center;
+  align-items: center;
+  padding: 15px 0;
 }
 .ul-nav a{
    text-decoration: none;
    color: rgb(114, 64, 240);
 }
 .li-nav{
-    list-style-type: none;
-    color: white;
-    font-size: 22px;
-    transition: all 0.3s ease-in-out;
+  font-size: 22px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .li-nav:hover{
@@ -58,6 +67,7 @@ body{
 
 main{
     margin: 0;
+    margin-top: 80px;
 }
 
 .h1-perfil{
@@ -327,30 +337,129 @@ main{
 
 
 
-@media only screen and (max-width: 768px){
-  .sobre{
-    width: 80%;
+@media (max-width: 1024px) {
+
+  .ul-nav {
+    gap: 20px;
   }
-  .p-sobre{
-    text-align: center;
-    max-width: 100%;
+
+  .h1-perfil {
+    font-size: 32px;
   }
-  .h1-perfil{
-    margin-top: -200px;
+
+  .h2-perfil {
+    font-size: 22px;
   }
-  .div-projetos{
-    width: 80%;
-  }
-  .p-skills{
-    max-width: 90%;
-  }
-  .ul-nav{
+
+  .projects-container {
     gap: 30px;
-    position: relative;
-    left: -5%;
+  }
+
+  .project-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .nav-cabecalho {
+    height: 60px;
+  }
+
+  .ul-nav {
+    gap: 15px;
+  }
+
+  .ul-nav li a {
+    font-size: 16px;
+  }
+
+  main {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .h1-perfil {
+    font-size: 28px;
+  }
+
+  .h2-perfil {
+    font-size: 20px;
+  }
+
+  .sobre {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .p-sobre {
+    font-size: 16px;
+  }
+
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 360px;
+  }
+
+  .project-card img {
+    height: auto;
+  }
+
+  
+  .project-btns {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .project-btns a {
+    width: 80%; 
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .ul-nav {
+    gap: 10px;
+  }
+
+  .ul-nav li a {
+    font-size: 14px;
+  }
+
+  .h1-perfil {
+    font-size: 24px;
+  }
+
+  .h2-perfil {
+    font-size: 18px;
+  }
+
+  .project-card p {
+    font-size: 14px;
   }
 
 }
+
+
 
 html{
     scroll-behavior: smooth;
