@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap');
 
-html{
-    scroll-behavior: smooth;
-}
-
 
   :root{
     --blue-1: #0b2340; /* tom escuro de azul */
@@ -23,6 +19,7 @@ body{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+   scroll-padding-top: 90px;
 }
 
 .nav-cabecalho{
@@ -42,7 +39,10 @@ body{
     gap: 60px;
     justify-content: center;
 }
-
+.ul-nav a{
+   text-decoration: none;
+   color: rgb(114, 64, 240);
+}
 .li-nav{
     list-style-type: none;
     color: white;
@@ -191,7 +191,7 @@ main{
 
 .p-projetos{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -241,6 +241,92 @@ main{
     box-shadow: 4px 4px 20px #0d47a1;
 }
 
+.projects-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 120px;
+}
+
+
+.project-card {
+  width: 450px;
+  height: 700px;
+  background: rgba(15, 23, 42, 0.85);
+  border-radius: 12px;
+  padding-bottom: 25px;
+  border: 2px solid #1E293B;
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.2);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+
+.project-card img {
+  width: 92%;
+  padding: 4%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+
+.project-card h3 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+
+.project-card p {
+  color: #E2E8F0;
+  font-size: 17px;
+  max-width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 55px;
+}
+
+
+.project-btns {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 12px;              
+  margin-top: 25px;
+}
+
+.project-btns a {
+  padding: 10px 16px;
+  background: #0d47a1;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+  
+}
+
+.project-btns a:hover {
+  transition: 0.7s;
+  background: transparent;
+  border: 2px solid #0d47a1;
+  box-shadow: 0px 0px 8px #0d47a1;
+}
+
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.35);
+}
+
+
+
+
 @media only screen and (max-width: 768px){
   .sobre{
     width: 80%;
@@ -263,4 +349,9 @@ main{
     position: relative;
     left: -5%;
   }
+
+}
+
+html{
+    scroll-behavior: smooth;
 }
