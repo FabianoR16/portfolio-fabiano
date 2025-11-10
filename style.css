@@ -392,6 +392,7 @@ main{
   .sobre {
     padding: 0 20px;
     text-align: center;
+    width: 60%;
   }
 
   .p-sobre {
