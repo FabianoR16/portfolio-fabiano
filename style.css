@@ -72,7 +72,7 @@ main{
 
 .h1-perfil{
     position: relative;
-    top: 350px;
+    top: 200px;
     text-align: center;
     color: white;
     font-size: 55px;
@@ -80,17 +80,18 @@ main{
 
 .h2-perfil{
         position: relative;
-    top: 350px;
+    top: 200px;
     text-align: center;
     color: white;
     font-size: 20px;
 }
 
 .h2-sobre{
-    margin-top: 970px;
+    margin-top: 770px;
     text-align: center;
     color: white;
     font-size: 35px;
+    padding-top: 120px;
 }
 .sobre{
     position: relative;
@@ -127,6 +128,7 @@ main{
     text-align: center;
     color: white;
     font-size: 35px;
+    padding-top: 120px;
 }
 
 .h2-habilidades {
@@ -134,6 +136,7 @@ main{
   text-align: center;
   color: white;
   font-size: 35px;
+  padding-top: 120px;
 }
 
 
@@ -143,6 +146,7 @@ main{
   flex-wrap: wrap;
   gap: 40px;
   margin-top: 50px;
+  
 }
 
 
@@ -157,6 +161,7 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 
