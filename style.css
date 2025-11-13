@@ -333,14 +333,77 @@ main{
   box-shadow: 0px 0px 8px #0d47a1;
 }
 
+.div-contato{
+  width: 200px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #0d47a1;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 180px;
+}
+
+.div-contato:hover{
+  transition: all 0.4s ease;
+  transform: scale(1.1);
+}
+
+.h2-contato{
+  margin-top: 300px;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  padding-top: 120px;
+}
+
+.h3-contato{
+  color: white;
+  text-align: center;
+}
+
+.img-contato {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.contato {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+}
+
 
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 25px rgba(59, 130, 246, 0.35);
 }
 
+footer{
+  padding: 15px;
+  background-color: black;
+  margin: 0 auto;
+}
 
+.p-footer{
+  color: white;
+  text-align: center;
 
+}
+.a-footer{
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+.img-footer{
+  width: 40px;
+}
 
 @media (max-width: 1024px) {
 
@@ -364,6 +427,21 @@ main{
     max-width: 400px;
     margin: 0 auto;
   }
+}
+
+.typing {
+  display: inline-block;
+  border-right: 3px solid white; 
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  animation: blink 0.7s step-end infinite;
+}
+
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
 }
 
 
